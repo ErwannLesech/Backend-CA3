@@ -1,0 +1,23 @@
+{% load static %}
+
+<link rel="stylesheet" href="{% static 'garage/form.css' %}">
+
+<div class="navbar">
+    <a href="/garage/">Home</a>
+    <a href="/garage/create/">Add Motorcycle</a>
+</div>
+
+<body>
+
+    {% block title %} Modify a motorcycle {% endblock %}
+
+    {% block content %}
+        <h1>Modify a motorcycle</h1>
+        <form method="post" action="">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button type="submit" class="btn btn-primary">Modify</button>
+        </form>
+    {% endblock %}
+
+</body>

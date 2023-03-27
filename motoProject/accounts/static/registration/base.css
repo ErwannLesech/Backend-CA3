@@ -1,0 +1,16 @@
+html{
+    text-align: center;
+    background-color: green;
+    text-align: middle;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 20px;
+    color: orange;
+    font-weight: bold;
+    margin-top: 20%;
+}
+
+title{
+    font-size: 50px;
+    font-weight: bold;
+    color: white;
+}

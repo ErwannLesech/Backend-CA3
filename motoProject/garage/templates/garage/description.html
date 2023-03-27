@@ -1,0 +1,37 @@
+{% load static %}
+
+<link rel="stylesheet" href="{% static 'garage/description.css' %}">
+
+<div class="navbar">
+    <a href="/garage/">Home</a>
+    <a href="/garage/create/">Add Motorcycle</a>
+</div>
+
+<h1>
+    {{ motorcycle.motorcycle_text }} -
+    {{ motorcycle.motorcycle_brand }}
+</h1>
+
+<a href="./update/"> Edit </a>
+
+<h2>description</h2>
+
+<h3>{{ motorcycle.motorcycle_description }}</h3>
+
+
+<!-- <h2>Reviews</h2>
+ {% for review in motorcycle.review_set.all %}
+  <p><strong>{{ review.name }}</strong></p>
+  <p>{{ review.review_text }}</p>
+  <p>{{ review.pub_date }}</p>
+{% empty %}
+  <p>No reviews yet.</p>
+{% endfor %}
+
+<h2>Add a review</h2>
+<form method="post" action="">
+  {% csrf_token %}
+  {{ form.as_p }}
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form> -->
+

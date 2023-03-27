@@ -1,0 +1,83 @@
+.navbar{
+    height: 50px;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+}
+
+.navbar a {
+    padding: 8px 6px 16px 6px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    
+}
+
+.navbar a:hover {
+    color: #f1f1f1;
+}
+
+body{
+    background: url("img/garage.jpg") no-repeat;
+    background-size: 100%;
+    color: white;
+    padding-top: 25px;
+}
+
+.list {
+    padding-left: 20px;
+    padding-top: 50px;
+    font-size: 40px;
+}
+
+li a {
+    color: orange;
+}
+
+a {
+    text-decoration: none;
+}
+
+li a:hover{
+    color: white;
+    scale : 1.5;
+    transition: 0.3s;
+}
+
+.flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.edit a {
+    color: green;
+}
+
+.delete a {
+    color: red;
+}
+
+.moto{
+    text-align: center;
+}
+
+h1{
+    text-align: center;
+    color: orange;
+    text-decoration: underline;
+    font-size: 64px;
+}
+
+ul {
+    padding: 30px;
+    
+}

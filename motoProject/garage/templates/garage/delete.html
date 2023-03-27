@@ -1,0 +1,17 @@
+{% load static %}
+
+<link rel="stylesheet" href="{% static 'garage/form.css' %}">
+
+<div class="navbar">
+    <a href="/garage/">Home</a>
+    <a href="/garage/create/">Add Motorcycle</a>
+</div>
+
+<body>
+    <form method="POST" action="">
+        {% csrf_token %}
+        <p>Are you sure your want to delete "{{motorcycle.motorcycle_text}}"?</p>
+        <a href="../../">No, take me back</a>
+        <input type="submit" value="Yes, delete it">
+    </form>
+</body>

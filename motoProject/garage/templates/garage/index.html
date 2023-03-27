@@ -1,0 +1,37 @@
+{% load static %}
+
+<link rel="stylesheet" href="{% static 'garage/style.css' %}">
+<title>Garage</title>
+
+<body>
+    <div class="navbar">
+        <a href="/garage/">Home</a>
+        <a href="/garage/create/">Add Motorcycle</a>
+        <a href="{% url 'logout' %}">Log Out</a>
+    </div>
+    <section class="list">
+        <h1>Garage</h1>
+
+        {% if latest_motorcycle_list %}
+            <ul>
+            {% for motorcycle in latest_motorcycle_list %}
+            <li>
+                <div class="flex">
+                    <div class="edit">
+                        <a href="{{ motorcycle.id }}/update/"> Edit </a>
+                    </div>
+                    <div class="moto">
+                        <a href="/garage/{{ motorcycle.id }}/">{{ motorcycle.motorcycle_text }}</a>
+                    </div>
+                    <div class="delete">
+                        <a href="{{ motorcycle.id }}/delete/"> Delete </a>
+                    </div>
+                </div>
+                </li>
+            {% endfor %}
+            </ul>
+        {% else %}
+            <p>No motorcycle are available.</p>
+        {% endif %}
+    </section>
+</body>

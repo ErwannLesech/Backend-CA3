@@ -1,0 +1,53 @@
+.navbar{
+    height: 50px;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: green;
+    overflow-x: hidden;
+    display: flex;
+    justify-content: space-between; 
+}
+
+.navbar a {
+    padding: 8px 6px 16px 6px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    
+}
+
+.navbar a:hover {
+    color: #f1f1f1;
+}
+
+li a {
+    color: orange;
+}
+
+h1{
+    text-align: center;
+    color: orange;
+    text-decoration: underline;
+}
+
+h2{
+    color: orange;
+    text-decoration: underline;
+}
+
+ul {
+    padding: 30px;
+    text-decoration: none;
+}
+
+body {
+    background-color: gray;
+    background-size: 100%;
+    color: white;
+    padding-top: 50px;
+    font-size: 30px;
+    padding-right: 200px;
+}
